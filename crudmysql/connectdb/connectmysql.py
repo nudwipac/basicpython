@@ -13,5 +13,5 @@ def connectdb():
     return connection
 
 
-# test call
+# test call funtion
 print(connectdb())
