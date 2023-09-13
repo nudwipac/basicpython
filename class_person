@@ -1,0 +1,23 @@
+class Person:
+    # Property
+    name = ""  # private variable __name, __age
+    age = 0
+
+    # Construct
+    def __init__(self, name, age):
+        self.name = name
+        self.age = age
+
+    # Methods
+    def get_profile(self):  # private Methods __get_profile
+        return self.name + " is " + str(self.age)
+
+    # Destructors
+    def __del__(self):
+        return True
+
+
+# Create an object
+person1 = Person("Ron", 33)
+print(person1.age)
+print(person1.get_profile())
